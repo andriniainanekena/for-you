@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To you <3!!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col items-center justify-center h-screen">
+    <p class="heartfelt-greeting">
+        Happy Valentine's Day Cathya 💗🥹
+    </p>
+
+    <img src="assets/first.gif" alt="Us" class="couple-photo">
+
+    <img src="assets/second.gif" class="envelope-trigger" onclick="revealAffection()">
+
+    <div id="modalBackdrop" class="modal-backdrop is-hidden" onclick="hideAffection()"></div>
+
+    <div id="affectionModal" class="affection-modal is-hidden">
+        <p class="tender-message text-lg font-semibold text-gray-700">
+            Thank you for being here by my side 💗 <br>
+            I LOVE YOU 🥹
+        </p>
+        <img src="assets/third.gif" alt="I Love U" class="love-reaction">
+        <button onclick="hideAffection()" class="dismiss-button">Close</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
